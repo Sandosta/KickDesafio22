@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">G
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Quiz</title>
+</head>
+<body>
+        <script> 
+         
+                const jogador = prompt("QUE OS JOGOS COMECEM. Qual o seu nome?") 
+                let op = 10 
+                let cont = 0 
+                let pontuacao = 0;
+                let resposta 
+                
+                while (op != 0){ 
+                        op = parseInt(prompt("O que vai ser então? \n 1- animero \n 2- religioso \n 3- nerdola \n 0- arreguei"))
+
+
+                {
+
+                        switch(op){
+
+                        case 1:
+                        animero()
+                        break
+
+                        case 2:
+                        religioso()
+                        break
+
+                        case 3:
+                        nerdola()
+                        break
+
+                        
+                              
+                        }
+
+                }
+
+                function animero (){
+                        resposta = prompt("Haku personagem de Viagem de Chihiro se transforma em um dragão.  v ou f?" )
+                                if(resposta == "v"){
+                                        pontuacao++
+                                }else{
+                                        alert("Resposta incorreta.")
+                                }
+                                resposta = prompt("A mãe da Satsuke de Meu vizinho Totoro morre. v ou f?")
+                                if(resposta == "f"){
+                                        pontuacao++
+                                }else{
+                                        alert("Resposta incorreta.")
+                                }
+                                resposta = prompt("O mago Howl do Castelo Animado é o personagem de anime mais lindo de todos. v ou f?")
+                                if(resposta == "v"){
+                                        pontuacao++
+                                }else{
+                                        alert("Resposta incorreta.")
+                                }
+                                alert(`${jogador}, você respondeu corretamente a ${pontuacao} perguntas`)
+                                pontuacao = 0
+                           
+
+                }
+
+                function religioso(){
+                        
+                           resposta = prompt("Jacó matou seu irmão Esaú. v ou f?")
+                                if(resposta == "f"){
+                                        pontuacao++
+                                }else{
+                                        alert("Resposta incorreta.")
+                                }
+                                resposta = prompt("O apostolo Paulo conheceu Jesus. v ou f?")
+                                if(resposta == "f"){
+                                        pontuacao++
+                                }else{
+                                }
+                                resposta = prompt("Pedro negou Jesus 4 vezes. v ou f?")
+                                if(resposta == "f"){
+                                        pontuacao++
+                                }else{
+                                        alert("Resposta incorreta.")
+                                }
+                                alert(`${jogador}, você respondeu corretamente a ${pontuacao} perguntas`)
+                                pontuacao = 0
+
+
+                }
+                function nerdola(){
+                        
+                        resposta = prompt("Na mitologia grega, Perseus é filho de poseidon. v ou f?")
+                             if(resposta == "f"){
+                                     pontuacao++
+                             }else{
+                                     alert("Resposta incorreta.")
+                             }
+                             resposta = prompt("Harry Potter é um bruxo mestiço. v ou f?")
+                             if(resposta == "v"){
+                                     pontuacao++
+                             }else{
+                             }
+                             resposta = prompt("O primeiro livro de narnia é chamado 'O Leão, a feticeira e o guarda roupa'. v ouf ?")
+                             if(resposta == "verdadeiro"){
+                                     pontuacao++
+                             }else{
+                                     alert("Resposta incorreta.")
+                             }
+                             alert(`${jogador}, você respondeu corretamente a ${pontuacao} perguntas`)
+                             pontuacao = 0
+                }
+        }
+
+        
+
+        </script>
+        
+</body>
+</html>
